@@ -4,13 +4,9 @@ info:
   title: Nogarap API
   description: API documentation for Nogarap.
   version: "1.0.0"
-servers:
-  - url: https://api.tuodominio.com
 tags:
   - name: Auth
     description: Endpoint relativi ad autenticazione e registrazione
-  - name: Users
-    description: Endpoint relativi alla gestione utenti
 paths:
   /api/v1/signup/create:
     get:
@@ -47,14 +43,6 @@ paths:
           required: true
           description: |
             Public key of USB device.
-          schema:
-            type: string
-            format: text
-        - name: client_public_key
-          in: query
-          required: true
-          description: |
-            Public key of client.
           schema:
             type: string
             format: text
