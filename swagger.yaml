@@ -6,17 +6,17 @@ info:
   version: "1.0.0"
 tags:
   - name: Auth
-    description: Endpoint relativi ad autenticazione e registrazione
+    description: Endpoint relative to authenticatio and registration
 paths:
   /api/v1/signup/create:
     get:
       tags:
         - Auth
-      summary: Recupera informazioni sul signup
-      description: Ritorna una descrizione dell’endpoint di registrazione.
+      summary: Recovers signup informations
+      description: Returns a description of the registration endpoint.
       responses:
         "200":
-          description: Informazioni sull’endpoint
+          description: Endpoint informations.
           content:
             application/json:
               schema:
@@ -28,7 +28,7 @@ paths:
     post:
       tags:
         - Auth
-      summary: Registrazione utente
+      summary: User registration
       parameters:
         - name: device_uuid
           in: query
@@ -86,8 +86,8 @@ paths:
     post:
       tags: 
         - Auth
-      summary: Conferma e abilità l'utente
-      description: Contolla che i valori dati dall'utente siano effettivi e nel caso abilita l'utente.
+      summary: Confirms and enables the user
+      description: Checks that the user values are right and in that case enables the user.
       parameters:
         - name: POW
           in: query
